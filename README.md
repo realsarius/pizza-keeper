@@ -1,5 +1,10 @@
 # pizza-keeper
 
+Versiyon: e0.03
+
+- Giriş yaptıktan sonra kaybolmayan Menubar düzeltildi.
+- Çalıştırılabilir jar dosyası eklenildi.
+<hr>
 Version: e0.02
 
 - Artık 'Enter' tuşuna basarak giriş yapılabiliyor.
