@@ -67,22 +67,22 @@
                         <GaussianBlur radius="63.0" />
                      </effect>
                   </ImageView>
-                        <JFXTextField fx:id="emailInfo" layoutX="41.0" layoutY="87.0" prefHeight="70.0" prefWidth="294.0" promptText="E-mail" style="-fx-prompt-text-fill: white; -fx-text-fill: white;">
+                        <JFXTextField fx:id="emailInfo" layoutX="41.0" layoutY="87.0" onKeyPressed="#pressedEnterToLogin" prefHeight="70.0" prefWidth="294.0" promptText="E-mail" style="-fx-prompt-text-fill: white; -fx-text-fill: white;">
                             <font>
                                 <Font name="Montserrat Regular" size="16.0" />
                             </font>
                         </JFXTextField>
-                        <JFXPasswordField fx:id="passwdInfo" layoutX="41.0" layoutY="177.0" prefHeight="60.0" prefWidth="294.0" promptText="Password" style="-fx-prompt-text-fill: white; -fx-text-fill: white;">
+                        <JFXPasswordField fx:id="passwdInfo" layoutX="41.0" layoutY="177.0" onKeyPressed="#pressedEnterToLogin" prefHeight="60.0" prefWidth="294.0" promptText="Şifre" style="-fx-prompt-text-fill: white; -fx-text-fill: white;">
                             <font>
                                 <Font name="Montserrat Regular" size="16.0" />
                             </font>
                         </JFXPasswordField>
-                        <JFXButton id="loginButton" fx:id="loginButton" layoutX="41.0" layoutY="313.0" onAction="#loginButton" prefHeight="42.0" prefWidth="294.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-background-radius: 100;" text="Login" textFill="WHITE">
+                        <JFXButton id="loginButton" fx:id="loginButton" layoutX="41.0" layoutY="313.0" onAction="#loginButton" onKeyPressed="#pressedEnterToLogin" prefHeight="42.0" prefWidth="294.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-background-radius: 100;" text="Giriş" textFill="WHITE">
                             <font>
                                 <Font name="Montserrat Regular" size="18.0" />
                             </font>
                         </JFXButton>
-                        <Hyperlink layoutX="76.0" layoutY="259.0" text="Forgot Password?" textFill="WHITE" wrapText="true">
+                        <Hyperlink layoutX="76.0" layoutY="259.0" text="Şifreni mi unuttun?" textFill="WHITE" wrapText="true">
                             <font>
                                 <Font name="Montserrat Regular" size="16.0" />
                             </font>
@@ -109,15 +109,15 @@
                             <font>
                                 <Font name="Montserrat Regular" size="16.0" />
                             </font></JFXTextField>
-                        <JFXPasswordField layoutX="71.0" layoutY="185.0" prefHeight="49.0" prefWidth="294.0" promptText="Password" style="-fx-prompt-text-fill: white;">
+                        <JFXPasswordField layoutX="71.0" layoutY="185.0" prefHeight="49.0" prefWidth="294.0" promptText="Şifre" style="-fx-prompt-text-fill: white;">
                             <font>
                                 <Font name="Montserrat Regular" size="16.0" />
                             </font></JFXPasswordField>
-                        <JFXPasswordField layoutX="71.0" layoutY="284.0" prefHeight="60.0" prefWidth="294.0" promptText="Password" style="-fx-prompt-text-fill: white;">
+                        <JFXPasswordField layoutX="71.0" layoutY="284.0" prefHeight="60.0" prefWidth="294.0" promptText="Şifre" style="-fx-prompt-text-fill: white;">
                             <font>
                                 <Font name="Montserrat Regular" size="16.0" />
                             </font></JFXPasswordField>
-                        <Label layoutX="71.0" layoutY="42.0" prefHeight="33.0" prefWidth="277.0" text="Please enter your e-mail:" textFill="WHITE">
+                        <Label layoutX="71.0" layoutY="42.0" prefHeight="33.0" prefWidth="277.0" text="Lütfen e-mailinizi girin" textFill="WHITE">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -125,7 +125,7 @@
                                 <DropShadow />
                             </effect>
                         </Label>
-                        <Label layoutX="71.0" layoutY="151.0" text="Please enter your password:" textFill="WHITE">
+                        <Label layoutX="71.0" layoutY="151.0" text="Lütfen şifrenizi girin" textFill="WHITE">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -133,7 +133,7 @@
                                 <DropShadow />
                             </effect>
                         </Label>
-                        <Label layoutX="71.0" layoutY="257.0" text="Confirm your password:" textFill="WHITE">
+                        <Label layoutX="71.0" layoutY="257.0" text="Lütfen şifrenizi tekrar girin" textFill="WHITE">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -141,14 +141,14 @@
                                 <DropShadow />
                             </effect>
                         </Label>
-                        <JFXButton id="signupButton" fx:id="signupButton" layoutX="71.0" layoutY="376.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-background-radius: 100;" text="Sign up" textFill="WHITE">
+                        <JFXButton id="signupButton" fx:id="signupButton" layoutX="71.0" layoutY="376.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-background-radius: 100;" text="Kayıt Ol" textFill="WHITE">
                             <font>
                                 <Font name="Montserrat Regular" size="22.0" />
                             </font>
                         </JFXButton>
                     </children>
                 </AnchorPane>
-                <HBox id="leftHBox" fx:id="leftHBox" alignment="CENTER" prefHeight="111.0" prefWidth="710.0">
+                <HBox id="leftHBox" fx:id="leftHBox" alignment="CENTER" layoutY="40.0" prefHeight="111.0" prefWidth="710.0">
                     <children>
                         <Label alignment="CENTER" text="Pizza" textAlignment="CENTER" textFill="WHITE">
                             <font>
@@ -160,9 +160,9 @@
                         </Label>
                     </children>
                 </HBox>
-                <HBox id="rightHBox" fx:id="rightHBox" alignment="CENTER_RIGHT" layoutX="761.0" prefHeight="111.0" prefWidth="833.0">
+                <HBox id="rightHBox" fx:id="rightHBox" alignment="CENTER_RIGHT" layoutX="753.0" layoutY="40.0" prefHeight="111.0" prefWidth="833.0">
                     <children>
-                        <JFXButton id="HBoxLoginButton" onAction="#showLoginAnchorPane" prefHeight="73.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Login" textFill="WHITE">
+                        <JFXButton id="HBoxLoginButton" onAction="#showLoginAnchorPane" prefHeight="73.0" prefWidth="180.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Giriş" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="30.0" />
                             </HBox.margin>
@@ -173,7 +173,7 @@
                                 <DropShadow spread="0.12" />
                             </effect>
                         </JFXButton>
-                        <JFXButton id="HBoxSignupButton" fx:id="signUp" layoutX="389.0" layoutY="36.0" onAction="#showSignupAnchorPane" prefHeight="75.0" prefWidth="194.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Sign up" textFill="WHITE">
+                        <JFXButton id="HBoxSignupButton" fx:id="signUp" layoutX="389.0" layoutY="36.0" onAction="#showSignupAnchorPane" prefHeight="75.0" prefWidth="194.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" text="Kayıt" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="50.0" />
                             </HBox.margin>
@@ -188,26 +188,7 @@
                 </HBox>
             <AnchorPane id="mainAnchorPane" fx:id="mainAnchorPane" blendMode="SRC_ATOP" layoutY="3.0" prefHeight="900.0" prefWidth="1600.0" visible="false">
                <children>
-                  <MenuBar blendMode="OVERLAY" layoutY="17.0" prefHeight="25.0" prefWidth="1600.0">
-                    <menus>
-                      <Menu mnemonicParsing="false" text="File">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Close" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Edit">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Delete" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Help">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="About" />
-                        </items>
-                      </Menu>
-                    </menus>
-                  </MenuBar>
-                  <ImageView fitHeight="725.0" fitWidth="885.0" layoutX="710.0" layoutY="42.0" opacity="0.5" pickOnBounds="true">
+                  <ImageView fitHeight="745.0" fitWidth="853.0" layoutX="742.0" layoutY="76.0" opacity="0.5" pickOnBounds="true">
                      <image>
                         <Image url="@../Images/black.jpg" />
                      </image>
@@ -215,28 +196,28 @@
                         <GaussianBlur radius="63.0" />
                      </effect>
                   </ImageView>
-                  <VBox layoutX="741.0" layoutY="42.0" prefHeight="855.0" prefWidth="853.0">
+                  <VBox layoutX="742.0" layoutY="43.0" prefHeight="855.0" prefWidth="853.0">
                      <children>
-                        <TitledPane id="firstTitledPane" prefHeight="69.0" prefWidth="853.0" text="Boyut">
+                        <TitledPane id="firstTitledPane" fx:id="boyutTitledPane" animated="false" onMouseClicked="#snapPizzalar" prefHeight="69.0" prefWidth="853.0" text="Boyut">
                           <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <AnchorPane fx:id="boyutAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <RadioButton fx:id="mediumRadioButton" layoutX="87.0" layoutY="5.0" mnemonicParsing="false" text="Medium">
+                                    <RadioButton fx:id="mediumRadioButton" layoutX="87.0" layoutY="5.0" mnemonicParsing="false" text="Orta">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton fx:id="largeRadioButton" layoutX="216.0" layoutY="5.0" mnemonicParsing="false" text="Large">
+                                    <RadioButton fx:id="largeRadioButton" layoutX="216.0" layoutY="5.0" mnemonicParsing="false" text="Büyük">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton fx:id="extraLargeRadioButton" layoutX="368.0" layoutY="5.0" mnemonicParsing="false" text="Extra Large">
+                                    <RadioButton fx:id="extraLargeRadioButton" layoutX="368.0" layoutY="5.0" mnemonicParsing="false" text="Çok Büyük">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton fx:id="extraExtraLargeRadioButton" layoutX="537.0" layoutY="5.0" mnemonicParsing="false" text="Extra Extra Large">
+                                    <RadioButton fx:id="extraExtraLargeRadioButton" layoutX="537.0" layoutY="5.0" mnemonicParsing="false" text="Çok Çok Büyük">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
@@ -248,12 +229,12 @@
                               <Insets />
                            </opaqueInsets>
                         </TitledPane>
-                        <TitledPane id="secondTitledPane" prefHeight="242.0" prefWidth="853.0" text="Pizzalar">
+                        <TitledPane id="secondTitledPane" fx:id="pizzalarTitledPane" animated="false" onMouseClicked="#snapTatlilar" prefHeight="242.0" prefWidth="853.0" text="Pizzalar">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                            <content>
-                              <ScrollPane prefHeight="500.0" prefWidth="851.0">
+                              <ScrollPane fx:id="pizzalarScrollPane" prefHeight="500.0" prefWidth="851.0">
                                 <content>
                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="825.0" prefWidth="840.0">
                                        <children>
@@ -367,12 +348,12 @@
                                                 <Image url="@../Images/tavuklu-pizza.jpg" />
                                              </image>
                                           </ImageView>
-                                          <RadioButton fx:id="yaprakDonerliPizza" layoutX="588.0" layoutY="174.0" mnemonicParsing="false" text="Yaprak Dönerli Pizza">
+                                          <RadioButton fx:id="yaprakDonerliPizza" layoutX="610.0" layoutY="174.0" mnemonicParsing="false" text="Yaprak Dönerli Pizza">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
                                           </RadioButton>
-                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="578.0" layoutY="24.0" pickOnBounds="true">
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="600.0" layoutY="24.0" pickOnBounds="true">
                                              <image>
                                                 <Image url="@../Images/yaprak-donerli-pizza.jpg" />
                                              </image>
@@ -383,11 +364,11 @@
                               </ScrollPane>
                            </content>
                         </TitledPane>
-                        <TitledPane prefHeight="239.0" prefWidth="853.0" text="Tatlılar &amp; Dondurmalar">
+                        <TitledPane fx:id="tatlilarTitledPane" animated="false" onMouseClicked="#snapIcecekler" prefHeight="233.0" prefWidth="853.0" text="Tatlılar &amp; Dondurmalar">
                            <content>
-                              <ScrollPane prefHeight="257.0" prefWidth="851.0">
+                              <ScrollPane fx:id="tatlilarScrollPane" prefHeight="257.0" prefWidth="851.0">
                                 <content>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="851.0">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="841.0">
                                        <children>
                                           <RadioButton fx:id="ucAdetSufle" layoutX="76.0" layoutY="165.0" mnemonicParsing="false" text="3 Adet Sufle">
                                              <font>
@@ -399,7 +380,7 @@
                                                 <Font size="16.0" />
                                              </font>
                                           </RadioButton>
-                                          <RadioButton fx:id="carteDorKarnavaliDondurma" layoutX="586.0" layoutY="165.0" mnemonicParsing="false" text="Carte Dor Karnavalı Dondurma">
+                                          <RadioButton fx:id="carteDorKarnavaliDondurma" layoutX="585.0" layoutY="164.0" mnemonicParsing="false" text="Carte Dor Karnavalı Dondurma">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
@@ -414,7 +395,7 @@
                                                 <Image url="@../Images/algida-maras-dondurma.jpg" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="612.0" layoutY="15.0" pickOnBounds="true">
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="611.0" layoutY="14.0" pickOnBounds="true">
                                              <image>
                                                 <Image url="@../Images/carte-dor-karnavali-dondurma.jpg" />
                                              </image>
@@ -455,38 +436,38 @@
                               </ScrollPane>
                            </content>
                         </TitledPane>
-                        <TitledPane prefHeight="235.0" prefWidth="853.0" text="İçecekler">
+                        <TitledPane fx:id="iceceklerTitledPane" animated="false" prefHeight="235.0" prefWidth="853.0" text="İçecekler">
                            <content>
-                              <ScrollPane prefHeight="296.0" prefWidth="851.0">
+                              <ScrollPane fx:id="iceceklerScrollPane" prefHeight="296.0" prefWidth="851.0">
                                 <content>
                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="441.0" prefWidth="841.0">
                                        <children>
-                                          <RadioButton fx:id="liptonSeftaliUcYuzML" layoutX="57.0" layoutY="164.0" mnemonicParsing="false" text="Lipton Şeftali 300 ML">
+                                          <RadioButton fx:id="liptonSeftaliUcYuzML" layoutX="40.0" layoutY="164.0" mnemonicParsing="false" text="Lipton Şeftali 300 ML">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
                                           </RadioButton>
-                                          <RadioButton fx:id="pepsiDortYuzElliML" layoutX="369.0" layoutY="164.0" mnemonicParsing="false" text="Pepsi 450 ML">
+                                          <RadioButton fx:id="pepsiDortYuzElliML" layoutX="357.0" layoutY="164.0" mnemonicParsing="false" text="Pepsi 450 ML">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
                                           </RadioButton>
-                                          <RadioButton fx:id="pepsiKutuUcYuzOtuzML" layoutX="648.0" layoutY="164.0" mnemonicParsing="false" text="Pepsi Kutu 330 ML">
+                                          <RadioButton fx:id="pepsiKutuUcYuzOtuzML" layoutX="632.0" layoutY="164.0" mnemonicParsing="false" text="Pepsi Kutu 330 ML">
                                              <font>
                                                 <Font size="16.0" />
                                              </font>
                                           </RadioButton>
-                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="14.0" pickOnBounds="true">
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="14.0" pickOnBounds="true">
                                              <image>
                                                 <Image url="@../Images/lipton-seftali-330-ml.jpg" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="341.0" layoutY="14.0" pickOnBounds="true">
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="329.0" layoutY="14.0" pickOnBounds="true">
                                              <image>
                                                 <Image url="@../Images/pepsi-450-ml.jpg" />
                                              </image>
                                           </ImageView>
-                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="632.0" layoutY="14.0" pickOnBounds="true">
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="616.0" layoutY="14.0" pickOnBounds="true">
                                              <image>
                                                 <Image url="@../Images/pepsi-kutu-330-ml.jpg" />
                                              </image>
@@ -509,8 +490,47 @@
                         </TitledPane>
                      </children>
                   </VBox>
+                  <MenuBar blendMode="OVERLAY" layoutY="18.0" prefHeight="25.0" prefWidth="1600.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Dosya">
+                        <items>
+                          <MenuItem fx:id="cikisYapMenuItem" mnemonicParsing="false" onAction="#cikisYap" text="Çıkış Yap" />
+                              <MenuItem mnemonicParsing="false" text="Kapat" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Düzenle">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Deneme" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Yardım">
+                        <items>
+                          <MenuItem fx:id="hakkindaMenuItem" mnemonicParsing="false" onAction="#hakkindaMetodu" text="Hakkında" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
                </children>
             </AnchorPane>
+            <MenuBar layoutY="18.0" prefWidth="1600.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Dosya">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#kapat" text="Kapat" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Düzenle">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Deneme" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Yardım">
+                     <items>
+                        <MenuItem fx:id="hakkindaMenuItem1" mnemonicParsing="false" onAction="#hakkindaMetodu" text="Hakkında" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
             </children>
         </AnchorPane>
     </children>
