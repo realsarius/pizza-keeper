@@ -512,7 +512,7 @@
                   </MenuBar>
                </children>
             </AnchorPane>
-            <MenuBar layoutY="18.0" prefWidth="1600.0">
+            <MenuBar fx:id="girisMenuBar" layoutY="18.0" prefWidth="1600.0">
                <menus>
                   <Menu mnemonicParsing="false" text="Dosya">
                      <items>
