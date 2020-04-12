@@ -32,6 +32,8 @@ public class Controller {
     @FXML public TitledPane tatlilarTitledPane;
     @FXML public TitledPane iceceklerTitledPane;
 
+    @FXML private MenuBar girisMenuBar;
+
     @FXML public JFXButton signUp;
     @FXML public HBox leftHBox;
     @FXML public HBox rightHBox;
@@ -137,6 +139,7 @@ public class Controller {
         leftHBox.setVisible(true);
         rightHBox.setVisible(true);
         mainAnchorPane.setVisible(false);
+        girisMenuBar.setVisible(true);
     }
 
     public void showMainPane(){
@@ -145,6 +148,7 @@ public class Controller {
         leftHBox.setVisible(false);
         rightHBox.setVisible(false);
         mainAnchorPane.setVisible(true);
+        girisMenuBar.setVisible(false);
     }
 
     public void showLoginAnchorPane(ActionEvent event) {
@@ -153,6 +157,7 @@ public class Controller {
         leftHBox.setVisible(true);
         rightHBox.setVisible(true);
         mainAnchorPane.setVisible(false);
+        girisMenuBar.setVisible(true);
     }
 
     public void showSignupAnchorPane(ActionEvent event) {
@@ -162,6 +167,7 @@ public class Controller {
         leftHBox.setVisible(true);
         rightHBox.setVisible(true);
         mainAnchorPane.setVisible(false);
+        girisMenuBar.setVisible(true);
     }
 
     public void snapPizzalar(MouseEvent mouseEvent) {
