@@ -9,7 +9,7 @@ Version: e0.02
 - Artık Menubar ile çıkış yapılabiliyor.
 - Menubar'a Hakkında kısmı eklendi.
 - Menubar'a Çıkış Yap butonu eklendi.
-
+<hre>
 Version e0.00
 
 -Proje başlatıldı.
