@@ -11,7 +11,7 @@ Version: e0.02<br />
 
 - Artık 'Enter' tuşuna basarak giriş yapılabiliyor.
 - TitledPane pencereleri birbirine yapıştırıldı.
-- Program tamamen Türkçe diline çevirildi.
+- Program tamamen Türkçe diline çevrildi.
 - Bazı pencereler daha uygun yerlere taşındı.
 - Artık Menubar ile çıkış yapılabiliyor.
 - Menubar'a Hakkında kısmı eklendi.
