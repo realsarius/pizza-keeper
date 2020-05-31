@@ -1,0 +1,51 @@
+<application>
+  <component name="TmcSettings">
+    <option name="settingsTmc">
+      <SettingsTmc>
+        <option name="firstRun" value="false" />
+        <option name="username" value="tehadro@protonmail.com" />
+        <option name="course">
+          <Course>
+            <option name="cometUrl">
+              <URI />
+            </option>
+            <option name="description" value="Programming exercises for the first part of the Java programming course. https://java-programming.mooc.fi/" />
+            <option name="detailsUrl">
+              <URI />
+            </option>
+            <option name="id" value="600" />
+            <option name="name" value="mooc-java-programming-i" />
+            <option name="reviewsUrl">
+              <URI />
+            </option>
+            <option name="spywareUrls">
+              <list>
+                <URI />
+              </list>
+            </option>
+            <option name="title" value="Java Programming I" />
+            <option name="unlockUrl">
+              <URI />
+            </option>
+          </Course>
+        </option>
+        <option name="organization">
+          <Organization>
+            <option name="information" value="University of Helsinki's Massive Open Online Courses. All new courses from mooc.fi live here." />
+            <option name="logoPath" value="/system/organizations/logos/000/000/021/original/mooc-logo.png?1513356394" />
+            <option name="name" value="MOOC" />
+            <option name="pinned" value="true" />
+            <option name="slug" value="mooc" />
+          </Organization>
+        </option>
+        <option name="token" value="9a084fefd218eae38294cb5423263cc012998f024953f0fd341ccfb4f20d2fb8" />
+        <option name="oauthCredentials">
+          <OauthCredentials>
+            <option name="oauthApplicationId" value="d4f9a574a4f6f2803359ba1f9047e46680d9c9e305c3f1736b124a3d64e48e80" />
+            <option name="oauthSecret" value="5672ded3fb10909faf78752164f1b03477e5f253aaab2ceea45c14fa34ef8353" />
+          </OauthCredentials>
+        </option>
+      </SettingsTmc>
+    </option>
+  </component>
+</application>
