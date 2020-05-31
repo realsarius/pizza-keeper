@@ -1,7 +1,151 @@
 <application>
   <component name="TmcExerciseDatabase">
     <option name="exerciseDatabase">
-      <ExerciseDatabase />
+      <ExerciseDatabase>
+        <option name="courses">
+          <map>
+            <entry key="2013 Object-oriented programming, part 1">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="2013 Object-oriented programming, part 2">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Aikatauluton Ohjelmoinnin MOOC, Ohjelmoinnin jatkokurssi">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Aikatauluton Ohjelmoinnin MOOC, Ohjelmoinnin perusteet">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Java Programming I">
+              <value>
+                <list>
+                  <Exercise>
+                    <option name="allReviewPointsGiven" value="true" />
+                    <option name="attempted" value="true" />
+                    <option name="checksum" value="cbf4ee4b81164510c547c35499415db6" />
+                    <option name="codeReviewRequestsEnabled" value="false" />
+                    <option name="courseName" value="mooc-java-programming-i" />
+                    <option name="downloadUrl">
+                      <URI />
+                    </option>
+                    <option name="id" value="83276" />
+                    <option name="name" value="part06-Part06_13.Exercises" />
+                    <option name="returnUrl">
+                      <URI />
+                    </option>
+                    <option name="returnable" value="true" />
+                    <option name="zipUrl">
+                      <URI />
+                    </option>
+                  </Exercise>
+                  <Exercise>
+                    <option name="allReviewPointsGiven" value="true" />
+                    <option name="checksum" value="067bcfc23648d0cc80dc31ebe82adc12" />
+                    <option name="codeReviewRequestsEnabled" value="false" />
+                    <option name="courseName" value="mooc-java-programming-i" />
+                    <option name="downloadUrl">
+                      <URI />
+                    </option>
+                    <option name="id" value="83282" />
+                    <option name="name" value="part07-Part07_06.GradeStatistics" />
+                    <option name="returnUrl">
+                      <URI />
+                    </option>
+                    <option name="returnable" value="true" />
+                    <option name="zipUrl">
+                      <URI />
+                    </option>
+                  </Exercise>
+                  <Exercise>
+                    <option name="allReviewPointsGiven" value="true" />
+                    <option name="checksum" value="56d605c258125d134498f48a9c497b34" />
+                    <option name="codeReviewRequestsEnabled" value="false" />
+                    <option name="courseName" value="mooc-java-programming-i" />
+                    <option name="downloadUrl">
+                      <URI />
+                    </option>
+                    <option name="id" value="83283" />
+                    <option name="name" value="part07-Part07_07.RecipeSearch" />
+                    <option name="returnUrl">
+                      <URI />
+                    </option>
+                    <option name="returnable" value="true" />
+                    <option name="zipUrl">
+                      <URI />
+                    </option>
+                  </Exercise>
+                  <Exercise>
+                    <option name="allReviewPointsGiven" value="true" />
+                    <option name="checksum" value="57ec0d538cef8f6d544a70e0e6c5b1b8" />
+                    <option name="codeReviewRequestsEnabled" value="false" />
+                    <option name="courseName" value="mooc-java-programming-i" />
+                    <option name="downloadUrl">
+                      <URI />
+                    </option>
+                    <option name="id" value="83284" />
+                    <option name="name" value="part07-Part07_08.BigYear" />
+                    <option name="returnUrl">
+                      <URI />
+                    </option>
+                    <option name="returnable" value="true" />
+                    <option name="zipUrl">
+                      <URI />
+                    </option>
+                  </Exercise>
+                </list>
+              </value>
+            </entry>
+            <entry key="Java Programming II">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Ohjelmoinnin MOOC 2020, Ohjelmoinnin jatkokurssi">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Ohjelmoinnin MOOC 2020, Ohjelmoinnin perusteet">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Tietokantojen perusteet, syksy 2019, projekti">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Web-palvelinohjelmointi Java 2020">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Web-palvelinohjelmointi Java 2020, kokeen ohjelmointiosuus">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Web-palvelinohjelmointi Java 2020, projekti">
+              <value>
+                <list />
+              </value>
+            </entry>
+            <entry key="Web-palvelinohjelmointi Java, itseopiskelu">
+              <value>
+                <list />
+              </value>
+            </entry>
+          </map>
+        </option>
+      </ExerciseDatabase>
     </option>
   </component>
 </application>
